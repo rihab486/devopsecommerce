@@ -3,6 +3,9 @@ version: "3"
 services:
   application:
     container_name: e-commerce-front-container
-    image: rihabbenhasso/e-commerce-front
+    image: rihabbenhasso/ecommerce-front
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile
     ports:
       - "5000:80"
