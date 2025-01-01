@@ -3,15 +3,15 @@ version: "3"
 services:
   #service1 backend
   api:
-    container_name: e-commerce-back-container
+    container_name: ecommerce-back-container
     env_file:
        - .env
     depends_on:
       - mongodb-service
       #chnage par path dockerhub img
     # build: 
-    #   context: .
-    #   dockerfile: Dockerfile
+    #    context: .
+    #    dockerfile: Dockerfile
     #voila rihabbenhasso/e-commerce-back
     image: rihabbenhasso/ecommerce-back
     ports:

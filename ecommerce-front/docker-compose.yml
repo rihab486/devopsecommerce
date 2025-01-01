@@ -1,11 +1,15 @@
-version: "3"
+name: app-ecommerce-stack
 
 services:
-  application:
-    container_name: e-commerce-front-container
+  app-ecommerce:
+    container_name: ecommerce-front-container
     image: rihabbenhasso/ecommerce-front
-    # build: 
+    
+    # build:
     #   context: .
     #   dockerfile: Dockerfile
+      
+    
     ports:
-      - "5000:80"
+      - '4001:8080'
+   
